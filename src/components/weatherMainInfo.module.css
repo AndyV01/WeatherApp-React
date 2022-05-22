@@ -1,0 +1,51 @@
+.mainInfo{
+    height: 70%;
+    box-shadow: 25px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    animation: flot 8s ease infinite;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+@keyframes flot{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.city{
+    font-size: 32px;
+    text-align: center;
+    font-weight: bolder;
+}
+.country{
+    font-size: 20px;
+    text-align: center;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.condition{
+    font-size: 24px;
+}
+.current{
+    font-size: 38px;
+    font-weight: bold;
+}
+@media (max-width:570px) {
+    .mainInfo{
+        height: 350px;
+    }
+   iframe{
+       height: 300px;
+   }
+  }
